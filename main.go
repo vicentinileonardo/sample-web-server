@@ -20,6 +20,22 @@ var samples = []sample{
 	{Name: "Test3", ID: "3", Title: "Sarah Vaughan and Clifford Brown"},
 }
 
+// @title           Sample Web Server API
+// @version         1.0
+// @description     Sample Web Server API for managing samples.
+// @termsOfService  http://swagger.io/terms/
+
+// @contact.name   Krateo Support
+// @contact.url    https://krateo.io
+// @contact.email  contact@krateoplatformops.io
+
+// @license.name  Apache 2.0
+// @license.url   http://www.apache.org/licenses/LICENSE-2.0.html
+
+// @servers.url http://sample-web-server:8080
+
+// @externalDocs.description  OpenAPI
+// @externalDocs.url          https://swagger.io/resources/open-api/
 func main() {
 	router := gin.Default()
 	router.GET("/samples", getSamples)

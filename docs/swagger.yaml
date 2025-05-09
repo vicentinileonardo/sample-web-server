@@ -10,11 +10,20 @@ components:
           type: string
       type: object
 externalDocs:
-  description: ""
-  url: ""
+  description: OpenAPI
+  url: https://swagger.io/resources/open-api/
 info:
-  title: ""
-  version: ""
+  contact:
+    email: contact@krateoplatformops.io
+    name: Krateo Support
+    url: https://krateo.io
+  description: Sample Web Server API for managing samples.
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: Sample Web Server API
+  version: "1.0"
 openapi: 3.1.0
 paths:
   /samples:
@@ -159,3 +168,5 @@ paths:
                 type: object
           description: Not Found
       summary: Update a Sample by Name
+servers:
+- url: http://sample-web-server:8080
