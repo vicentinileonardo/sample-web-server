@@ -1,0 +1,1 @@
+swag init --parseDependency --v3.1 -g main.go
